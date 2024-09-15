@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="connectionListCell" customModule="Sacrena_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alice" translatesAutoresizingMaskIntoConstraints="NO" id="URC-wR-Gqc" customClass="networkImage" customModule="Sacrena_Task" customModuleProvider="target">
+                        <rect key="frame" x="20" y="21" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="4Za-rS-oYe"/>
+                            <constraint firstAttribute="height" constant="55" id="at9-JY-bti"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="27.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5o-cz-OUp">
+                        <rect key="frame" x="90" y="29" width="45.333333333333343" height="17.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="send a message and embark on a journey of discovery together" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wed-vO-a6Y">
+                        <rect key="frame" x="90" y="48.666666666666664" width="277" height="27.999999999999993"/>
+                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="themeGrey"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wed-vO-a6Y" secondAttribute="trailing" constant="20" id="06N-dB-XjL"/>
+                    <constraint firstItem="O5o-cz-OUp" firstAttribute="top" secondItem="URC-wR-Gqc" secondAttribute="top" constant="8" id="27k-YQ-rFJ"/>
+                    <constraint firstItem="wed-vO-a6Y" firstAttribute="leading" secondItem="O5o-cz-OUp" secondAttribute="leading" id="SFx-aH-p9K"/>
+                    <constraint firstItem="URC-wR-Gqc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Vtk-Rp-Jbh"/>
+                    <constraint firstItem="URC-wR-Gqc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dHn-MU-Ffc"/>
+                    <constraint firstItem="O5o-cz-OUp" firstAttribute="leading" secondItem="URC-wR-Gqc" secondAttribute="trailing" constant="15" id="ivo-OD-u4y"/>
+                    <constraint firstItem="wed-vO-a6Y" firstAttribute="top" secondItem="O5o-cz-OUp" secondAttribute="bottom" constant="2" id="lqM-BN-Z0l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="107.63358778625954" y="18.661971830985916"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="URC-wR-Gqc">
+            <size key="intrinsicContentSize" width="5184" height="3456"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="alice" width="5184" height="3456"/>
+        <namedColor name="themeGrey">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
