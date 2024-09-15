@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="senderTextChatCell" rowHeight="160" id="KGk-i7-Jjw" customClass="senderTextChatCell" customModule="Sacrena_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgN-Ap-2cD">
+                        <rect key="frame" x="80" y="15" width="252" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWx-A3-wHg">
+                                <rect key="frame" x="12" y="12" width="228" height="106"/>
+                                <string key="text">Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world! Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world!</string>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                <color key="textColor" name="themeGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="senderTheme"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZWx-A3-wHg" secondAttribute="bottom" constant="12" id="21p-uw-AmW"/>
+                            <constraint firstAttribute="trailing" secondItem="ZWx-A3-wHg" secondAttribute="trailing" constant="12" id="3EH-6D-dRG"/>
+                            <constraint firstItem="ZWx-A3-wHg" firstAttribute="top" secondItem="TgN-Ap-2cD" secondAttribute="top" constant="12" id="LwX-Zv-lW8"/>
+                            <constraint firstItem="ZWx-A3-wHg" firstAttribute="leading" secondItem="TgN-Ap-2cD" secondAttribute="leading" constant="12" id="il7-a1-Uxo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TgN-Ap-2cD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Gwk-Pa-8SU"/>
+                    <constraint firstItem="TgN-Ap-2cD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="Pba-8l-STY"/>
+                    <constraint firstAttribute="bottom" secondItem="TgN-Ap-2cD" secondAttribute="bottom" constant="15" id="j3B-08-kz9"/>
+                    <constraint firstAttribute="trailing" secondItem="TgN-Ap-2cD" secondAttribute="trailing" constant="20" id="vXX-u6-QIE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="themeGrey"/>
+            <connections>
+                <outlet property="message" destination="ZWx-A3-wHg" id="M1T-QG-nMc"/>
+                <outlet property="messageView" destination="TgN-Ap-2cD" id="gYa-H2-TYF"/>
+            </connections>
+            <point key="canvasLocation" x="93.129770992366403" y="39.436619718309863"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="senderTheme">
+            <color red="0.87450980392156863" green="0.99215686274509807" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeGrey">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

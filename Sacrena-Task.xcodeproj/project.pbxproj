@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2089DE2C97668600EA734E /* textChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2089DD2C97668600EA734E /* textChatCell.xib */; };
+		EA2089DF2C97668600EA734E /* textChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2089DC2C97668600EA734E /* textChatCell.swift */; };
+		EA2089E12C97694A00EA734E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2089E02C97694A00EA734E /* View.swift */; };
+		EA2089E42C976B5900EA734E /* senderTextChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2089E32C976B5900EA734E /* senderTextChatCell.xib */; };
+		EA2089E52C976B5900EA734E /* senderTextChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2089E22C976B5900EA734E /* senderTextChatCell.swift */; };
 		EAE1EDBA2C97421700B5EFCA /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE1EDB92C97421700B5EFCA /* ChatVC.swift */; };
 		EAE416EB2C971E1800220993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE416EA2C971E1800220993 /* AppDelegate.swift */; };
 		EAE416ED2C971E1800220993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE416EC2C971E1800220993 /* SceneDelegate.swift */; };
@@ -25,6 +30,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA2089DC2C97668600EA734E /* textChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textChatCell.swift; sourceTree = "<group>"; };
+		EA2089DD2C97668600EA734E /* textChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = textChatCell.xib; sourceTree = "<group>"; };
+		EA2089E02C97694A00EA734E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		EA2089E22C976B5900EA734E /* senderTextChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = senderTextChatCell.swift; sourceTree = "<group>"; };
+		EA2089E32C976B5900EA734E /* senderTextChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = senderTextChatCell.xib; sourceTree = "<group>"; };
 		EAE1EDB92C97421700B5EFCA /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		EAE416E72C971E1800220993 /* Sacrena-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sacrena-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE416EA2C971E1800220993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +68,7 @@
 		EAE1EDBB2C97427F00B5EFCA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EA2089E02C97694A00EA734E /* View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -143,6 +154,10 @@
 				EAE4171A2C9723C100220993 /* profileView.swift */,
 				EAE417262C973EE600220993 /* connectionListCell.swift */,
 				EAE417272C973EE600220993 /* connectionListCell.xib */,
+				EA2089DC2C97668600EA734E /* textChatCell.swift */,
+				EA2089DD2C97668600EA734E /* textChatCell.xib */,
+				EA2089E22C976B5900EA734E /* senderTextChatCell.swift */,
+				EA2089E32C976B5900EA734E /* senderTextChatCell.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -221,10 +236,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2089E42C976B5900EA734E /* senderTextChatCell.xib in Resources */,
 				EAE417292C973EE600220993 /* connectionListCell.xib in Resources */,
 				EAE417192C97239B00220993 /* profileView.xib in Resources */,
 				EAE416F42C971E1900220993 /* Assets.xcassets in Resources */,
 				EAE416F72C971E1900220993 /* Base in Resources */,
+				EA2089DE2C97668600EA734E /* textChatCell.xib in Resources */,
 				EAE416F22C971E1800220993 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,8 +255,11 @@
 			files = (
 				EAE1EDBA2C97421700B5EFCA /* ChatVC.swift in Sources */,
 				EAE417282C973EE600220993 /* connectionListCell.swift in Sources */,
+				EA2089E12C97694A00EA734E /* View.swift in Sources */,
+				EA2089DF2C97668600EA734E /* textChatCell.swift in Sources */,
 				EAE4171B2C9723C100220993 /* profileView.swift in Sources */,
 				EAE416EF2C971E1800220993 /* ViewController.swift in Sources */,
+				EA2089E52C976B5900EA734E /* senderTextChatCell.swift in Sources */,
 				EAE417252C973D4B00220993 /* ConnectionListVC.swift in Sources */,
 				EAE416EB2C971E1800220993 /* AppDelegate.swift in Sources */,
 				EAE4171D2C97380F00220993 /* networkImage.swift in Sources */,

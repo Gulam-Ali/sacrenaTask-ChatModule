@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="textChatCell" rowHeight="97" id="KGk-i7-Jjw" customClass="textChatCell" customModule="Sacrena_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bob" translatesAutoresizingMaskIntoConstraints="NO" id="1FH-J7-oE3" customClass="networkImage" customModule="Sacrena_Task" customModuleProvider="target">
+                        <rect key="frame" x="15" y="37" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="52M-IB-5om"/>
+                            <constraint firstAttribute="width" constant="45" id="MJe-44-HHw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="md9-zZ-DyA">
+                        <rect key="frame" x="72" y="15" width="247" height="67"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeK-C0-Zfc">
+                                <rect key="frame" x="12" y="12" width="223" height="43"/>
+                                <string key="text">Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world! Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world!</string>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                <color key="textColor" name="themeGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.92549019607843142" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QeK-C0-Zfc" secondAttribute="trailing" constant="12" id="YV1-YO-NgR"/>
+                            <constraint firstItem="QeK-C0-Zfc" firstAttribute="top" secondItem="md9-zZ-DyA" secondAttribute="top" constant="12" id="aFx-tm-qI8"/>
+                            <constraint firstItem="QeK-C0-Zfc" firstAttribute="leading" secondItem="md9-zZ-DyA" secondAttribute="leading" constant="12" id="e8M-yo-6Mj"/>
+                            <constraint firstAttribute="bottom" secondItem="QeK-C0-Zfc" secondAttribute="bottom" constant="12" id="x66-yV-cby"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="md9-zZ-DyA" secondAttribute="trailing" constant="50" id="13b-Ag-kS5"/>
+                    <constraint firstItem="1FH-J7-oE3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="8SX-Gq-7Df"/>
+                    <constraint firstItem="md9-zZ-DyA" firstAttribute="bottom" secondItem="1FH-J7-oE3" secondAttribute="bottom" id="Yai-dq-NQB"/>
+                    <constraint firstItem="md9-zZ-DyA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="YoE-kw-bJD"/>
+                    <constraint firstAttribute="bottom" secondItem="1FH-J7-oE3" secondAttribute="bottom" constant="15" id="lVc-Ww-ujK"/>
+                    <constraint firstItem="md9-zZ-DyA" firstAttribute="leading" secondItem="1FH-J7-oE3" secondAttribute="trailing" constant="12" id="qD1-oY-Mon"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="themeGrey"/>
+            <connections>
+                <outlet property="messageView" destination="md9-zZ-DyA" id="0RR-1Z-IcD"/>
+                <outlet property="userimage" destination="1FH-J7-oE3" id="uEg-vc-ZiY"/>
+            </connections>
+            <point key="canvasLocation" x="106.10687022900763" y="17.253521126760564"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bob" width="4516" height="5622"/>
+        <namedColor name="themeGrey">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
