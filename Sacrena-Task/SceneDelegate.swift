@@ -19,9 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     ) {
         let config = ChatClientConfig(apiKey: .init(streamChat.apiKey))
         /// user id and token for the user
-        let userId = "alice-9650"
-        let token: Token =
-            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWxpY2UtOTY1MCJ9.IWZct_53TKi958F8O4Ub5HOn11dZ_qcqo3q9ey1QJS4"
+        let userId = streamChat.aliceID
+        let token: Token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWxpY2UtOTY1MCJ9.IWZct_53TKi958F8O4Ub5HOn11dZ_qcqo3q9ey1QJS4"
 
         /// Step 1: create an instance of ChatClient and share it using the singleton
         ChatClient.shared = ChatClient(config: config)

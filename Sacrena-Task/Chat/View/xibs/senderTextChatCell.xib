@@ -19,17 +19,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgN-Ap-2cD">
-                        <rect key="frame" x="80" y="15" width="252" height="130"/>
+                        <rect key="frame" x="80" y="5" width="252" height="150"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWx-A3-wHg">
-                                <rect key="frame" x="12" y="12" width="228" height="92.333333333333329"/>
+                                <rect key="frame" x="12" y="11.999999999999993" width="228" height="112.33333333333331"/>
                                 <string key="text">Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world! Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world!</string>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
                                 <color key="textColor" name="themeGrey"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:43 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLP-I5-PYY">
-                                <rect key="frame" x="191.66666666666669" y="110.33333333333333" width="48.333333333333343" height="11.666666666666671"/>
+                                <rect key="frame" x="191.66666666666669" y="130.33333333333334" width="48.333333333333343" height="11.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -47,9 +47,9 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="TgN-Ap-2cD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Gwk-Pa-8SU"/>
+                    <constraint firstItem="TgN-Ap-2cD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Gwk-Pa-8SU"/>
                     <constraint firstItem="TgN-Ap-2cD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="Pba-8l-STY"/>
-                    <constraint firstAttribute="bottom" secondItem="TgN-Ap-2cD" secondAttribute="bottom" constant="15" id="j3B-08-kz9"/>
+                    <constraint firstAttribute="bottom" secondItem="TgN-Ap-2cD" secondAttribute="bottom" constant="5" id="j3B-08-kz9"/>
                     <constraint firstAttribute="trailing" secondItem="TgN-Ap-2cD" secondAttribute="trailing" constant="20" id="vXX-u6-QIE"/>
                 </constraints>
             </tableViewCellContentView>
@@ -65,7 +65,7 @@
     </objects>
     <resources>
         <namedColor name="senderTheme">
-            <color red="0.87450980392156863" green="0.99215686274509807" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="1" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="themeGrey">
             <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

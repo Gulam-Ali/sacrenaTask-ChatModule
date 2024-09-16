@@ -7,6 +7,7 @@
 
 import UIKit
 import StreamChat
+import PhotosUI
 
 class ChatVC: UIViewController {
     
@@ -47,12 +48,24 @@ class ChatVC: UIViewController {
             let tap = UITapGestureRecognizer(target: self, action: #selector(backTapped))
             backImage.isUserInteractionEnabled = true
             backImage.addGestureRecognizer(tap)
+            let camtap = UITapGestureRecognizer(target: self, action: #selector(cameraTapped))
+            camera.isUserInteractionEnabled = true
+            camera.addGestureRecognizer(camtap)
         }
     }
     
     @objc func backTapped(){
         eventsController = nil
         navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func cameraTapped(){
+        var config = PHPickerConfiguration()
+        config.selectionLimit = 1 // Set to 0 to allow multiple selections
+        config.filter = .images // Filter for images
+        let picker = PHPickerViewController(configuration: config)
+        picker.delegate = self
+        present(picker, animated: true, completion: nil)
     }
     
     private var setStreamChatData: Void {
@@ -85,13 +98,46 @@ class ChatVC: UIViewController {
         }
     }
     
+    func scrollToLastMessage() {
+        let lastSectionIndex = chatTableView.numberOfSections - 1
+        let lastRowIndex = chatTableView.numberOfRows(inSection: lastSectionIndex) - 1
+
+        // Ensure the table has at least one row
+        if lastRowIndex >= 0 {
+            let indexPath = IndexPath(row: lastRowIndex, section: lastSectionIndex)
+            chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+        }
+    }
+
+    
 
     @IBAction func sendTapped(_ sender: Any) {
         self.view.endEditing(true)
         viewModel?.sendTextMessage(message: messageTextView.text ?? "")
     }
     
+    
+    
 
+}
+
+//MARK: >>>>>> PHPickerViewControllerDelegate
+extension ChatVC : PHPickerViewControllerDelegate {
+    
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        for result in results {
+            result.itemProvider.loadObject(ofClass: UIImage.self) { [weak self] (object, error) in
+                if let image = object as? UIImage {
+                    DispatchQueue.main.async {
+                        print("Image selected")
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 //MARK: >>>>>> UITableView Protocols
@@ -149,10 +195,9 @@ extension ChatVC : EventsControllerDelegate {
     func eventsController(_ controller: EventsController, didReceiveEvent event: Event) {
          switch event {
          case let event as MessageNewEvent:
-             print("New message inserted..")
              viewModel?.lastMessages.append(event.message)
-             //viewModel?.fetchMessages()
              chatTableView.reloadData()
+             scrollToLastMessage()
              
          default:
              break
@@ -167,10 +212,12 @@ extension ChatVC : chatVMProtocol{
         if viewModel?.lastMessages.count == 0 {
             chatTableView.isHidden = true
             placeholderLabel.isHidden = false
+            placeholderLabel.text = "This is the beginning of your conversation with \(viewModel?.senderName ?? "")."
         }else{
             placeholderLabel.isHidden = true
             chatTableView.isHidden = false
             chatTableView.reloadData()
+            scrollToLastMessage()
         }
     }
     

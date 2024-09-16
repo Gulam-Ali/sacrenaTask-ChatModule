@@ -26,7 +26,7 @@ final class chatVM {
     
     //Get sender's user name
     var senderName: String {
-        let sender = ChatChannel.lastActiveMembers.filter({$0.id != "alice-9650"})
+        let sender = ChatChannel.lastActiveMembers.filter({$0.id != streamChat.aliceID})
         return sender.first?.name ?? ""
     }
     

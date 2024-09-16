@@ -18,7 +18,7 @@ class connectionListCell: UITableViewCell {
     
     var channelData : ChatChannel! {
         didSet{
-            let sender = channelData.lastActiveMembers.filter({$0.id != "alice-9650"})
+            let sender = channelData.lastActiveMembers.filter({$0.id != streamChat.aliceID})
             let isOnline = sender.first?.isOnline ?? false
             statusView.backgroundColor = isOnline ? .green : .lightGray
             username.text = sender.first?.name ?? ""

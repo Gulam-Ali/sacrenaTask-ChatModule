@@ -22,7 +22,7 @@ final class recentChatsVM {
      var getRecentChatChannels: Void{
         let controller = ChatClient.shared.channelListController(
             query: .init(
-                filter: .and([.equal(.type, to: .messaging), .containMembers(userIds: ["alice-9650"])]),
+                filter: .and([.equal(.type, to: .messaging), .containMembers(userIds: [streamChat.aliceID])]),
                 sort: [.init(key: .lastMessageAt, isAscending: false)],
                 pageSize: 10
             )

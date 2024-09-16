@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bob" translatesAutoresizingMaskIntoConstraints="NO" id="1FH-J7-oE3" customClass="networkImage" customModule="Sacrena_Task" customModuleProvider="target">
-                        <rect key="frame" x="15" y="37" width="45" height="45"/>
+                        <rect key="frame" x="15" y="47" width="45" height="45"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="45" id="52M-IB-5om"/>
                             <constraint firstAttribute="width" constant="45" id="MJe-44-HHw"/>
@@ -31,17 +31,17 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="md9-zZ-DyA">
-                        <rect key="frame" x="72" y="15" width="247" height="67"/>
+                        <rect key="frame" x="72" y="5" width="247" height="87"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeK-C0-Zfc">
-                                <rect key="frame" x="12" y="11.999999999999998" width="223" height="29.333333333333329"/>
+                                <rect key="frame" x="12" y="12.000000000000004" width="223" height="49.333333333333343"/>
                                 <string key="text">Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world! Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world!</string>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
                                 <color key="textColor" name="themeGrey"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:45 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbn-M6-sV4">
-                                <rect key="frame" x="186.66666666666669" y="47.333333333333336" width="48.333333333333343" height="11.666666666666664"/>
+                                <rect key="frame" x="186.66666666666669" y="67.333333333333329" width="48.333333333333343" height="11.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -61,9 +61,9 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="md9-zZ-DyA" secondAttribute="trailing" constant="50" id="13b-Ag-kS5"/>
                     <constraint firstItem="1FH-J7-oE3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="8SX-Gq-7Df"/>
-                    <constraint firstItem="md9-zZ-DyA" firstAttribute="bottom" secondItem="1FH-J7-oE3" secondAttribute="bottom" id="Yai-dq-NQB"/>
-                    <constraint firstItem="md9-zZ-DyA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="YoE-kw-bJD"/>
-                    <constraint firstAttribute="bottom" secondItem="1FH-J7-oE3" secondAttribute="bottom" constant="15" id="lVc-Ww-ujK"/>
+                    <constraint firstItem="md9-zZ-DyA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="YoE-kw-bJD"/>
+                    <constraint firstAttribute="bottom" secondItem="md9-zZ-DyA" secondAttribute="bottom" constant="5" id="djT-2J-bVb"/>
+                    <constraint firstAttribute="bottom" secondItem="1FH-J7-oE3" secondAttribute="bottom" constant="5" id="lVc-Ww-ujK"/>
                     <constraint firstItem="md9-zZ-DyA" firstAttribute="leading" secondItem="1FH-J7-oE3" secondAttribute="trailing" constant="12" id="qD1-oY-Mon"/>
                 </constraints>
             </tableViewCellContentView>
