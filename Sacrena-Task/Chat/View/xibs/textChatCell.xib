@@ -33,20 +33,28 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="md9-zZ-DyA">
                         <rect key="frame" x="72" y="15" width="247" height="67"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeK-C0-Zfc">
-                                <rect key="frame" x="12" y="12" width="223" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeK-C0-Zfc">
+                                <rect key="frame" x="12" y="11.999999999999998" width="223" height="29.333333333333329"/>
                                 <string key="text">Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world! Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world!</string>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
                                 <color key="textColor" name="themeGrey"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:45 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbn-M6-sV4">
+                                <rect key="frame" x="186.66666666666669" y="47.333333333333336" width="48.333333333333343" height="11.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.88235294117647056" green="0.92549019607843142" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Gbn-M6-sV4" firstAttribute="trailing" secondItem="QeK-C0-Zfc" secondAttribute="trailing" id="5we-zm-xTl"/>
+                            <constraint firstItem="Gbn-M6-sV4" firstAttribute="top" secondItem="QeK-C0-Zfc" secondAttribute="bottom" constant="6" id="MBP-uw-2pZ"/>
                             <constraint firstAttribute="trailing" secondItem="QeK-C0-Zfc" secondAttribute="trailing" constant="12" id="YV1-YO-NgR"/>
                             <constraint firstItem="QeK-C0-Zfc" firstAttribute="top" secondItem="md9-zZ-DyA" secondAttribute="top" constant="12" id="aFx-tm-qI8"/>
                             <constraint firstItem="QeK-C0-Zfc" firstAttribute="leading" secondItem="md9-zZ-DyA" secondAttribute="leading" constant="12" id="e8M-yo-6Mj"/>
-                            <constraint firstAttribute="bottom" secondItem="QeK-C0-Zfc" secondAttribute="bottom" constant="12" id="x66-yV-cby"/>
+                            <constraint firstAttribute="bottom" secondItem="Gbn-M6-sV4" secondAttribute="bottom" constant="8" id="iyY-YP-nhc"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -62,12 +70,19 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" name="themeGrey"/>
             <connections>
+                <outlet property="message" destination="QeK-C0-Zfc" id="FHc-p9-Brf"/>
                 <outlet property="messageView" destination="md9-zZ-DyA" id="0RR-1Z-IcD"/>
+                <outlet property="timeLabel" destination="Gbn-M6-sV4" id="pM9-uq-dai"/>
                 <outlet property="userimage" destination="1FH-J7-oE3" id="uEg-vc-ZiY"/>
             </connections>
             <point key="canvasLocation" x="106.10687022900763" y="17.253521126760564"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="1FH-J7-oE3">
+            <size key="intrinsicContentSize" width="4516" height="5622"/>
+        </designable>
+    </designables>
     <resources>
         <image name="bob" width="4516" height="5622"/>
         <namedColor name="themeGrey">

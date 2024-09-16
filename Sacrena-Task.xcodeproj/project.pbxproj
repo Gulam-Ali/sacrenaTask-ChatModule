@@ -12,11 +12,16 @@
 		EA2089E12C97694A00EA734E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2089E02C97694A00EA734E /* View.swift */; };
 		EA2089E42C976B5900EA734E /* senderTextChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2089E32C976B5900EA734E /* senderTextChatCell.xib */; };
 		EA2089E52C976B5900EA734E /* senderTextChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2089E22C976B5900EA734E /* senderTextChatCell.swift */; };
+		EA2089E92C97788400EA734E /* StreamChat in Frameworks */ = {isa = PBXBuildFile; productRef = EA2089E82C97788400EA734E /* StreamChat */; };
+		EA4143322C981767000120F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE416F02C971E1800220993 /* Main.storyboard */; };
+		EA4143342C98239D000120F6 /* chatVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4143332C98239D000120F6 /* chatVM.swift */; };
+		EA4143372C984CFA000120F6 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EA4143362C984CFA000120F6 /* IQKeyboardManagerSwift */; };
+		EAABF5642C980FB300BC65C8 /* recentChatsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABF5632C980FB300BC65C8 /* recentChatsVM.swift */; };
+		EAABF5662C9812AB00BC65C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABF5652C9812AB00BC65C8 /* ViewController.swift */; };
+		EAABF5692C98143E00BC65C8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABF5682C98143E00BC65C8 /* Constant.swift */; };
 		EAE1EDBA2C97421700B5EFCA /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE1EDB92C97421700B5EFCA /* ChatVC.swift */; };
 		EAE416EB2C971E1800220993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE416EA2C971E1800220993 /* AppDelegate.swift */; };
 		EAE416ED2C971E1800220993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE416EC2C971E1800220993 /* SceneDelegate.swift */; };
-		EAE416EF2C971E1800220993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE416EE2C971E1800220993 /* ViewController.swift */; };
-		EAE416F22C971E1800220993 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EAE416F12C971E1800220993 /* Base */; };
 		EAE416F42C971E1900220993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE416F32C971E1900220993 /* Assets.xcassets */; };
 		EAE416F72C971E1900220993 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EAE416F62C971E1900220993 /* Base */; };
 		EAE417192C97239B00220993 /* profileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE417182C97239B00220993 /* profileView.xib */; };
@@ -35,11 +40,14 @@
 		EA2089E02C97694A00EA734E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		EA2089E22C976B5900EA734E /* senderTextChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = senderTextChatCell.swift; sourceTree = "<group>"; };
 		EA2089E32C976B5900EA734E /* senderTextChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = senderTextChatCell.xib; sourceTree = "<group>"; };
+		EA4143332C98239D000120F6 /* chatVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatVM.swift; sourceTree = "<group>"; };
+		EAABF5632C980FB300BC65C8 /* recentChatsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recentChatsVM.swift; sourceTree = "<group>"; };
+		EAABF5652C9812AB00BC65C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAABF5682C98143E00BC65C8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		EAE1EDB92C97421700B5EFCA /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		EAE416E72C971E1800220993 /* Sacrena-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sacrena-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE416EA2C971E1800220993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAE416EC2C971E1800220993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EAE416EE2C971E1800220993 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EAE416F12C971E1800220993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAE416F32C971E1900220993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAE416F62C971E1900220993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2089E92C97788400EA734E /* StreamChat in Frameworks */,
+				EA4143372C984CFA000120F6 /* IQKeyboardManagerSwift in Frameworks */,
 				EAE417222C97399300220993 /* SDWebImageMapKit in Frameworks */,
 				EAE417202C97399300220993 /* SDWebImage in Frameworks */,
 			);
@@ -65,10 +75,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA2089E72C97788400EA734E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAABF5672C98142800BC65C8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4171C2C97380F00220993 /* networkImage.swift */,
+				EAABF5682C98143E00BC65C8 /* Constant.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		EAE1EDBB2C97427F00B5EFCA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				EA2089E02C97694A00EA734E /* View.swift */,
+				EAABF5652C9812AB00BC65C8 /* ViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -78,6 +105,7 @@
 			children = (
 				EAE416E92C971E1800220993 /* Sacrena-Task */,
 				EAE416E82C971E1800220993 /* Products */,
+				EA2089E72C97788400EA734E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,7 +124,6 @@
 				EAE417032C971EC900220993 /* Chat */,
 				EAE416EA2C971E1800220993 /* AppDelegate.swift */,
 				EAE416EC2C971E1800220993 /* SceneDelegate.swift */,
-				EAE416EE2C971E1800220993 /* ViewController.swift */,
 				EAE416F02C971E1800220993 /* Main.storyboard */,
 				EAE416F32C971E1900220993 /* Assets.xcassets */,
 				EAE416F52C971E1900220993 /* LaunchScreen.storyboard */,
@@ -134,6 +161,8 @@
 		EAE417062C971EE300220993 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EAABF5632C980FB300BC65C8 /* recentChatsVM.swift */,
+				EA4143332C98239D000120F6 /* chatVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -141,8 +170,8 @@
 		EAE417072C971F1000220993 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EAABF5672C98142800BC65C8 /* Common */,
 				EAE1EDBB2C97427F00B5EFCA /* Extensions */,
-				EAE4171C2C97380F00220993 /* networkImage.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -190,6 +219,8 @@
 			packageProductDependencies = (
 				EAE4171F2C97399300220993 /* SDWebImage */,
 				EAE417212C97399300220993 /* SDWebImageMapKit */,
+				EA2089E82C97788400EA734E /* StreamChat */,
+				EA4143362C984CFA000120F6 /* IQKeyboardManagerSwift */,
 			);
 			productName = "Sacrena-Task";
 			productReference = EAE416E72C971E1800220993 /* Sacrena-Task.app */;
@@ -221,6 +252,8 @@
 			mainGroup = EAE416DE2C971E1800220993;
 			packageReferences = (
 				EAE4171E2C97399300220993 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				EA2089E62C9773CA00EA734E /* XCRemoteSwiftPackageReference "stream-chat-swift" */,
+				EA4143352C984CFA000120F6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = EAE416E82C971E1800220993 /* Products */;
 			projectDirPath = "";
@@ -236,13 +269,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4143322C981767000120F6 /* Main.storyboard in Resources */,
 				EA2089E42C976B5900EA734E /* senderTextChatCell.xib in Resources */,
 				EAE417292C973EE600220993 /* connectionListCell.xib in Resources */,
 				EAE417192C97239B00220993 /* profileView.xib in Resources */,
 				EAE416F42C971E1900220993 /* Assets.xcassets in Resources */,
 				EAE416F72C971E1900220993 /* Base in Resources */,
 				EA2089DE2C97668600EA734E /* textChatCell.xib in Resources */,
-				EAE416F22C971E1800220993 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,10 +291,13 @@
 				EA2089E12C97694A00EA734E /* View.swift in Sources */,
 				EA2089DF2C97668600EA734E /* textChatCell.swift in Sources */,
 				EAE4171B2C9723C100220993 /* profileView.swift in Sources */,
-				EAE416EF2C971E1800220993 /* ViewController.swift in Sources */,
 				EA2089E52C976B5900EA734E /* senderTextChatCell.swift in Sources */,
+				EAABF5692C98143E00BC65C8 /* Constant.swift in Sources */,
 				EAE417252C973D4B00220993 /* ConnectionListVC.swift in Sources */,
+				EAABF5662C9812AB00BC65C8 /* ViewController.swift in Sources */,
 				EAE416EB2C971E1800220993 /* AppDelegate.swift in Sources */,
+				EA4143342C98239D000120F6 /* chatVM.swift in Sources */,
+				EAABF5642C980FB300BC65C8 /* recentChatsVM.swift in Sources */,
 				EAE4171D2C97380F00220993 /* networkImage.swift in Sources */,
 				EAE416ED2C971E1800220993 /* SceneDelegate.swift in Sources */,
 			);
@@ -417,6 +453,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sacrena-Task/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To take photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To send media in chat";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -450,6 +488,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sacrena-Task/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To take photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To send media in chat";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -498,6 +538,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		EA2089E62C9773CA00EA734E /* XCRemoteSwiftPackageReference "stream-chat-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getstream/stream-chat-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.63.0;
+			};
+		};
+		EA4143352C984CFA000120F6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
 		EAE4171E2C97399300220993 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -509,6 +565,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EA2089E82C97788400EA734E /* StreamChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA2089E62C9773CA00EA734E /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
+			productName = StreamChat;
+		};
+		EA4143362C984CFA000120F6 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA4143352C984CFA000120F6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
 		EAE4171F2C97399300220993 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EAE4171E2C97399300220993 /* XCRemoteSwiftPackageReference "SDWebImage" */;

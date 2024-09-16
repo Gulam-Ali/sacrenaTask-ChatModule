@@ -10,12 +10,16 @@ import UIKit
 class senderTextChatCell: UITableViewCell {
     
     
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var message: UILabel!
-    @IBOutlet weak var messageView: UIView!
+    @IBOutlet weak var messageView: UIView!{
+        didSet{
+            messageView.roundCorners(corners: [.topLeft, .topRight, .bottomLeft], radius: 16.0)
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        messageView.roundCorners(corners: [.topLeft,.topRight,.bottomLeft], radius: 20.0)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

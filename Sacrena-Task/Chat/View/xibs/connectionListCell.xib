@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="387" height="97"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alice" translatesAutoresizingMaskIntoConstraints="NO" id="URC-wR-Gqc" customClass="networkImage" customModule="Sacrena_Task" customModuleProvider="target">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bob" translatesAutoresizingMaskIntoConstraints="NO" id="URC-wR-Gqc" customClass="networkImage" customModule="Sacrena_Task" customModuleProvider="target">
                         <rect key="frame" x="20" y="21" width="55" height="55"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="55" id="4Za-rS-oYe"/>
@@ -30,8 +31,8 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5o-cz-OUp">
-                        <rect key="frame" x="90" y="29" width="45.333333333333343" height="17.666666666666671"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5o-cz-OUp">
+                        <rect key="frame" x="90" y="29" width="72.333333333333314" height="17.666666666666671"/>
                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -42,6 +43,14 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wy8-lj-96C">
+                        <rect key="frame" x="20" y="60" width="10" height="10"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="enb-bC-BAh"/>
+                            <constraint firstAttribute="height" constant="10" id="ut7-GU-IVR"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" name="themeGrey"/>
                 <constraints>
@@ -52,21 +61,32 @@
                     <constraint firstItem="URC-wR-Gqc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dHn-MU-Ffc"/>
                     <constraint firstItem="O5o-cz-OUp" firstAttribute="leading" secondItem="URC-wR-Gqc" secondAttribute="trailing" constant="15" id="ivo-OD-u4y"/>
                     <constraint firstItem="wed-vO-a6Y" firstAttribute="top" secondItem="O5o-cz-OUp" secondAttribute="bottom" constant="2" id="lqM-BN-Z0l"/>
+                    <constraint firstItem="wy8-lj-96C" firstAttribute="top" secondItem="URC-wR-Gqc" secondAttribute="bottom" constant="-16" id="rgt-cL-roW"/>
+                    <constraint firstItem="wy8-lj-96C" firstAttribute="leading" secondItem="URC-wR-Gqc" secondAttribute="leading" id="tq0-7P-Xd7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lastmessage" destination="wed-vO-a6Y" id="jvq-cX-4bn"/>
+                <outlet property="statusView" destination="wy8-lj-96C" id="vgF-yJ-IJi"/>
+                <outlet property="userimage" destination="URC-wR-Gqc" id="etc-tt-09f"/>
+                <outlet property="username" destination="O5o-cz-OUp" id="cTM-zc-MJu"/>
+            </connections>
             <point key="canvasLocation" x="107.63358778625954" y="18.661971830985916"/>
         </tableViewCell>
     </objects>
     <designables>
         <designable name="URC-wR-Gqc">
-            <size key="intrinsicContentSize" width="5184" height="3456"/>
+            <size key="intrinsicContentSize" width="4516" height="5622"/>
         </designable>
     </designables>
     <resources>
-        <image name="alice" width="5184" height="3456"/>
+        <image name="bob" width="4516" height="5622"/>
         <namedColor name="themeGrey">
             <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

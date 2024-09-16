@@ -21,18 +21,26 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgN-Ap-2cD">
                         <rect key="frame" x="80" y="15" width="252" height="130"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWx-A3-wHg">
-                                <rect key="frame" x="12" y="12" width="228" height="106"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWx-A3-wHg">
+                                <rect key="frame" x="12" y="12" width="228" height="92.333333333333329"/>
                                 <string key="text">Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world! Experience a random chat alternative to find friends, connect with people, and chat with strangers from all over the world!</string>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
                                 <color key="textColor" name="themeGrey"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:43 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLP-I5-PYY">
+                                <rect key="frame" x="191.66666666666669" y="110.33333333333333" width="48.333333333333343" height="11.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="senderTheme"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="ZWx-A3-wHg" secondAttribute="bottom" constant="12" id="21p-uw-AmW"/>
+                            <constraint firstItem="FLP-I5-PYY" firstAttribute="top" secondItem="ZWx-A3-wHg" secondAttribute="bottom" constant="6" id="2d3-CI-59m"/>
+                            <constraint firstAttribute="trailing" secondItem="FLP-I5-PYY" secondAttribute="trailing" constant="12" id="2tD-2m-HEL"/>
                             <constraint firstAttribute="trailing" secondItem="ZWx-A3-wHg" secondAttribute="trailing" constant="12" id="3EH-6D-dRG"/>
+                            <constraint firstAttribute="bottom" secondItem="FLP-I5-PYY" secondAttribute="bottom" constant="8" id="Hgv-Mf-kGn"/>
                             <constraint firstItem="ZWx-A3-wHg" firstAttribute="top" secondItem="TgN-Ap-2cD" secondAttribute="top" constant="12" id="LwX-Zv-lW8"/>
                             <constraint firstItem="ZWx-A3-wHg" firstAttribute="leading" secondItem="TgN-Ap-2cD" secondAttribute="leading" constant="12" id="il7-a1-Uxo"/>
                         </constraints>
@@ -50,6 +58,7 @@
             <connections>
                 <outlet property="message" destination="ZWx-A3-wHg" id="M1T-QG-nMc"/>
                 <outlet property="messageView" destination="TgN-Ap-2cD" id="gYa-H2-TYF"/>
+                <outlet property="timeLabel" destination="FLP-I5-PYY" id="nHe-VD-aTQ"/>
             </connections>
             <point key="canvasLocation" x="93.129770992366403" y="39.436619718309863"/>
         </tableViewCell>

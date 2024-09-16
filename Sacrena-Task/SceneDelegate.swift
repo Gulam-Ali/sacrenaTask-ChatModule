@@ -6,16 +6,45 @@
 //
 
 import UIKit
+import StreamChat
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    func scene(
+        _ scene: UIScene,
+        willConnectTo session: UISceneSession,
+        options connectionOptions: UIScene.ConnectionOptions
+    ) {
+        let config = ChatClientConfig(apiKey: .init(streamChat.apiKey))
+        /// user id and token for the user
+        let userId = "alice-9650"
+        let token: Token =
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWxpY2UtOTY1MCJ9.IWZct_53TKi958F8O4Ub5HOn11dZ_qcqo3q9ey1QJS4"
 
+        /// Step 1: create an instance of ChatClient and share it using the singleton
+        ChatClient.shared = ChatClient(config: config)
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        /// Step 2: connect to chat
+        ChatClient.shared.connectUser(
+            userInfo: UserInfo(
+                id: userId,
+                name: "Alice",
+                imageURL: URL(string: "https://bit.ly/2TIt8NR")
+            ),
+            token: token
+        ) { error in
+            if let error = error {
+                print("Connection failed with: \(error)")
+            } else {
+                // User successfully connected
+                print("User successfully connected to Stream")
+            }
+        }
+
+        //Enable for stream debug logs
+        //LogConfig.level = .info
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
